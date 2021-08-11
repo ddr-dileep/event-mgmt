@@ -1,9 +1,9 @@
-
  html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 button#switch {
     color: var(--font-color);
@@ -101,7 +101,7 @@ button#switch{
    position: fixed;
    top: 100px;
    z-index: 5555555;
-   right: 0%;
+   left: 0%;
    background-color:var(--color-primary) ;
 }
 div.menu-bars img#open-menu{
@@ -237,6 +237,14 @@ section#About{
 }
 #About .container{
     margin-top: 3rem;
+}
+@media (max-width:1100px) {
+    section#About{
+        padding: 4rem 0;
+    }
+    #About .row .right{
+        margin-top: 20px;
+    }
 }
 @media (max-width:700px) {
     section#About{
@@ -453,8 +461,9 @@ footer img{
 }
 footer .footer_box .inner {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    flex-direction: column;
 }
 footer .footer_box .inner .boxx{
     padding: 40px;
@@ -466,10 +475,6 @@ footer .footer_box .inner .boxx{
 footer .footer_box h3{
     color: var(--color-accent);
     text-transform: uppercase;
-}
-footer .footer_box h6{
-    letter-spacing: 1.4px;
-    line-height: 32px;
 }
 footer .footer_box i{
     color: var(--color-primary);
