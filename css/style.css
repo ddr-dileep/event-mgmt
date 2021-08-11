@@ -51,6 +51,24 @@ button#switch {
   div.menus ul li a:hover{
       background-color: rgb(216, 163, 216);
   }
+  #myBtn {
+    display: none;
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px;
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: var(--color-primary);
+    color: white;
+    cursor: pointer; 
+    font-size: 18px; 
+    border-radius: 50%;
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
   .brand-logo h3{
       display: flex;
       justify-content: center;
