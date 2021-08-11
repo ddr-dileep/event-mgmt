@@ -26,7 +26,7 @@ button#switch {
       line-height: 100px;
       align-items: center;
       width: 100%;
-      position: sticky;
+      position: fixed;
       top: 0%;
       width: 100%;
       z-index: 99999;
