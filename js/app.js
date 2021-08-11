@@ -56,6 +56,16 @@ var swiper = new Swiper(".mySwiper", {
 
 
 const listMenu = document.querySelector('div.menus ul');
+const wipemenu = document.querySelectorAll('div.menus ul li a');
+console.log(wipemenu);
+Array.from(wipemenu).forEach(e=>{
+    console.log(e)
+    e.addEventListener("click",function(e){
+        listMenu.style.display = "none";
+        closeMenu.style.display  = 'none'
+        openMenu.style.display  = 'block'
+    })
+})
 const openMenu = document.getElementById('open-menu');
 const closeMenu = document.getElementById('close-menu');
 
