@@ -575,10 +575,9 @@
                 <div class=" col-md-6 col-12" data-aos-duration="2000" data-aos="fade-right">
                     <div class="inner">
                         <img class="logo" src="images/logo.jpg" alt="">
-                        <div class="boxx">
-                         <h3>ddr_Events</h3>
-                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, inventore voluptatibus optio deserunt molestiae amet eaque doloribus laboriosam quod quibusdam vdis!</h6>
-                        </div>
+                        
+                         <h3 class="mt-4 mb-4">ddr_Events</h3>
+                       
                     </div>
                 </div>
                 
@@ -637,6 +636,15 @@
                 // fade: true,
                 // asNavFor: '.slider-nav',
                 responsive: [
+                    {
+                        breakpoint: 1168,
+                        settings: {
+                            arrows: false,
+                            slidesToShow: 2,
+                            centerMode: true,
+                            centerPadding: '40px',
+                        }
+                    },
                     {
                         breakpoint: 768,
                         settings: {
