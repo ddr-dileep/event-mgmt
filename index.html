@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <title>DDR Event management</title>
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Demo styles -->
+    <style>
+        .swiper-container {
+            width: 100%;
+            padding-top: 7px;
+            padding-bottom: 30px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translate(-50%, -50%);
+
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 600px;
+            height: 600px;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        @media (max-width:768px) {
+            .swiper-slide {
+                background-position: center;
+                background-size: cover;
+                width: 350px;
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+</head>
+
+<body>
+    <div id="Top"></div>
+    <button id="switch" title="change theme" onclick="toggleTheme()"><i class="fas fa-adjust"></i></button>
+    <header id="Home">
+        <div class="menu-bars">
+            <img src="images/open.png" height="50px" width="50px" id="open-menu" alt="" srcset="">
+            <img src="images/close.png" height="50px" width="50px" id="close-menu" alt="" srcset="">
+        </div>
+        <nav class="container">
+            <div class="brand-logo">
+                <a href="index.html">
+                    <h3>ddr_Events</h3>
+                </a>
+            </div>
+            <div class="menus">
+                <ul>
+                    <li><a href="#Top">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Gallery">Gallery</a></li>
+                    <li><a href="#Price">Price</a></li>
+                    <li><a href="#Review">Review</a></li>
+
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <section id='top-video'>
+        <video src="video/bg.mp4" width="100%" autoplay loop muted></video>
+
+        <!-- Swiper -->
+        <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/slider/1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/slider/2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/slider/0.jpeg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/slider/2.webp" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/slider/3.webp" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/slider/4.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/slider/5.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/slider/6.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/slider/7.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/slider/8.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/slider/9.jpg" />
+                </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
+
+
+    <section id="About">
+        <div class="heading-main " data-aos="fade-up">
+            <h3>About <span>us</span></h3>
+        </div>
+        <div class="container">
+            <div class="row g-0">
+                <div class="left col-md-12 col-lg-6" data-aos="fade-right">
+                    <h2>Event management</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis ipsam quia recusandae
+                        repudiandae harum laudantium tenetur ducimus odit magnam voluptas dolor, cumque aspernatur vel
+                        aperiam reprehenderit. Velit amet facere facilis!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis ipsam quia recusandae
+                        repudiandae harum laudantium tenetur ducimus odit magnam voluptas dolor, cumque aspernatur vel
+                        aperiam reprehenderit. Velit amet facere facilis!</p>
+                    <a href="https://en.wikipedia.org/wiki/Event_management" target="_blank">learn more...</a>
+                </div>
+                <div class="right col-md-12 col-lg-6" data-aos="fade-left">
+                    <img src="images/about.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="Services">
+        <div class="heading-main my-5" data-aos="fade-up"  data-aos-duration="3000">
+            <h3>our <span>Services</span></h3>
+        </div>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+                <div class="col "  data-aos-duration="1000" data-aos="fade-up">
+                    <div class="card h-100 shadow">
+                        <i class="fas fa-location-arrow"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">Location Venues</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, praesentium? Minima
+                                ipsum suscipit maxime, natus deserunt unde aliquid repudiandae blanditiis!</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col"  data-aos-duration="1500" data-aos="fade-up">
+                    <div class="card h-100  shadow">
+                        <i class="fas fa-utensils"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">Food</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, praesentium? Minima
+                                ipsum suscipit maxime, natus deserunt unde aliquid repudiandae blanditiis!</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col"  data-aos-duration="2000" data-aos="fade-up">
+                    <div class="card h-100 shadow">
+                        <i class="fas fa-cocktail"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">Cocktail</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, praesentium? Minima
+                                ipsum suscipit maxime, natus deserunt unde aliquid repudiandae blanditiis!</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col"  data-aos-duration="1000" data-aos="fade-up">
+                    <div class="card h-100 shadow">
+                        <i class="fas fa-photo-video"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">photo-video</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, praesentium? Minima
+                                ipsum suscipit maxime, natus deserunt unde aliquid repudiandae blanditiis!</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col"  data-aos-duration="1500" data-aos="fade-up">
+                    <div class="card h-100 shadow">
+                        <i class="fas fa-headphones-alt"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">Entertainment</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, praesentium? Minima
+                                ipsum suscipit maxime, natus deserunt unde aliquid repudiandae blanditiis!</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col"  data-aos-duration="2000" data-aos="fade-up">
+                    <div class="card h-100 shadow">
+                        <i class="fas fa-address-card"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">address-card</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, praesentium? Minima
+                                ipsum suscipit maxime, natus deserunt unde aliquid repudiandae blanditiis!</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="Gallery">
+        <div class="heading-main my-5" data-aos-duration="1000" data-aos="fade-up">
+            <h3>our <span>Gallery</span></h3>
+        </div>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+                <div class="col" data-aos-duration="1000" data-aos="fade-up">
+                    <div class="card h-100">
+                        <img src="images/Gallery/1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col" data-aos-duration="1500" data-aos="fade-up">
+                    <div class="card h-100">
+                        <img src="images/Gallery/2.webp" alt="">
+                    </div>
+                </div>
+                <div class="col" data-aos-duration="2000" data-aos="fade-up">
+                    <div class="card h-100">
+                        <img src="images/Gallery/3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col" data-aos-duration="1000" data-aos="fade-up">
+                    <div class="card h-100">
+                        <img src="images/Gallery/4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col" data-aos-duration="1500" data-aos="fade-up">
+                    <div class="card h-100">
+                        <img src="images/Gallery/6.webp" alt="">
+                    </div>
+                </div>
+                <div class="col" data-aos-duration="2000" data-aos="fade-up">
+                    <div class="card h-100">
+                        <img src="images/Gallery/5.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="Price">
+        <div class="heading-main my-5" data-aos-duration="1000" data-aos="fade-up">
+            <h3>Best <span>Prices</span></h3>
+        </div>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4  g-4">
+
+                <div class="col">
+                    <div class="card h-100" data-aos-duration="1000" data-aos="fade-up">
+                        <h3>For party</h3>
+                        <h2>$200.22</h2>
+                        <p><i class="far fa-hand-point-right"></i> Decorations</p>
+                        <p><i class="far fa-hand-point-right"></i>Music and Photos</p>
+                        <p><i class="far fa-hand-point-right"></i>Food and Drinks</p>
+                        <p><i class="far fa-hand-point-right"></i>Waiters </p>
+                        <p><i class="far fa-hand-point-right"></i>Full Services </p>
+                        <p><i class="far fa-hand-point-right"></i>invitation card </p>
+                        <a href="">Check Out</a>
+
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100" data-aos-duration="1500" data-aos="fade-up">
+                        <h3>For party</h3>
+                        <h2>$200.22</h2>
+                        <p><i class="far fa-hand-point-right"></i> Decorations</p>
+                        <p><i class="far fa-hand-point-right"></i>Music and Photos</p>
+                        <p><i class="far fa-hand-point-right"></i>Food and Drinks</p>
+                        <p><i class="far fa-hand-point-right"></i>Waiters </p>
+                        <p><i class="far fa-hand-point-right"></i>Full Services </p>
+                        <p><i class="far fa-hand-point-right"></i>invitation card </p>
+                        <a href="">Check Out</a>
+
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100" data-aos-duration="2000" data-aos="fade-up">
+                        <h3>For party</h3>
+                        <h2>$200.22</h2>
+                        <p><i class="far fa-hand-point-right"></i> Decorations</p>
+                        <p><i class="far fa-hand-point-right"></i>Music and Photos</p>
+                        <p><i class="far fa-hand-point-right"></i>Food and Drinks</p>
+                        <p><i class="far fa-hand-point-right"></i>Waiters </p>
+                        <p><i class="far fa-hand-point-right"></i>Full Services </p>
+                        <p><i class="far fa-hand-point-right"></i>invitation card </p>
+                        <a href="">Check Out</a>
+
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100" data-aos-duration="2500" data-aos="fade-up">
+                        <h3>For party</h3>
+                        <h2>$200.22</h2>
+                        <p><i class="far fa-hand-point-right"></i> Decorations</p>
+                        <p><i class="far fa-hand-point-right"></i>Music and Photos</p>
+                        <p><i class="far fa-hand-point-right"></i>Food and Drinks</p>
+                        <p><i class="far fa-hand-point-right"></i>Waiters </p>
+                        <p><i class="far fa-hand-point-right"></i>Full Services </p>
+                        <p><i class="far fa-hand-point-right"></i>invitation card </p>
+                        <a href="">Check Out</a>
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="Review">
+        <div class="heading-main my-5" data-aos-duration="1000" data-aos="fade-up">
+            <h3>our <span>Services</span></h3>
+        </div>
+        <div class="container">
+            <div class="row row-cols-1 gx-4">
+                <div class="your-class">
+                    <div class="col">
+                        <div class="card">
+                            <div class="inner">
+                                <img src="images/Gallery/re1.jpg" alt="">
+                                <div class="name">
+                                    <h3>Jhon Doe</h3>
+                                    <p>Happy Client</p>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit error quis cupiditate
+                                voluptatem veritatis eaque deleniti eum? Quidem, alias quibusdam.</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <div class="inner">
+                                <img src="images/Gallery/re2.jpg" alt="">
+                                <div class="name">
+                                    <h3>Jammy </h3>
+                                    <p>Happy Client</p>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit error quis cupiditate
+                                voluptatem veritatis eaque deleniti eum? Quidem, alias quibusdam.</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <div class="inner">
+                                <img src="images/Gallery/re3.jpg" alt="">
+                                <div class="name">
+                                    <h3>killoni</h3>
+                                    <p>Happy Client</p>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit error quis cupiditate
+                                voluptatem veritatis eaque deleniti eum? Quidem, alias quibusdam.</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <div class="inner">
+                                <img src="images/Gallery/re4.jpeg" alt="">
+                                <div class="name">
+                                    <h3>Maya Devil</h3>
+                                    <p>Happy Client</p>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit error quis cupiditate
+                                voluptatem veritatis eaque deleniti eum? Quidem, alias quibusdam.</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <div class="inner">
+                                <img src="images/Gallery/re5.jpg" alt="">
+                                <div class="name">
+                                    <h3>Dhan Doe</h3>
+                                    <p>Happy Client</p>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit error quis cupiditate
+                                voluptatem veritatis eaque deleniti eum? Quidem, alias quibusdam.</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <div class="inner">
+                                <img src="images/Gallery/re6.jpg" alt="">
+                                <div class="name">
+                                    <h3>ghan Doe</h3>
+                                    <p>Happy Client</p>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit error quis cupiditate
+                                voluptatem veritatis eaque deleniti eum? Quidem, alias quibusdam.</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <div class="inner">
+                                <img src="images/Gallery/re7.jpg" alt="">
+                                <div class="name">
+                                    <h3>Jhon Chl</h3>
+                                    <p>Happy Client</p>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit error quis cupiditate
+                                voluptatem veritatis eaque deleniti eum? Quidem, alias quibusdam.</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <div class="inner">
+                                <img src="images/Gallery/re8.jpg" alt="">
+                                <div class="name">
+                                    <h3>Jhon Doe</h3>
+                                    <p>Happy Client</p>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit error quis cupiditate
+                                voluptatem veritatis eaque deleniti eum? Quidem, alias quibusdam.</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <div class="inner">
+                                <img src="images/Gallery/re9.jpg" alt="">
+                                <div class="name">
+                                    <h3>marry Doe</h3>
+                                    <p>Happy Client</p>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit error quis cupiditate
+                                voluptatem veritatis eaque deleniti eum? Quidem, alias quibusdam.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="Contact">
+        <div class="heading-main my-5" data-aos-duration="1000" data-aos="fade-up">
+            <h3>Contact <span>Us</span></h3>
+        </div>
+        <div class="container">
+            <form action="" data-aos-duration="1000" data-aos="fade-up">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Full Name</label>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <div class="form-floating mb-3">
+                            <input type="tel" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Mobile</label>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email</label>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">City</label>
+                        </div>
+
+                    </div>
+                    
+                    <div class="col-12">
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                            <label for="floatingTextarea2">Comments</label>
+                          </div>
+                    </div>
+
+
+                </div>
+
+
+                <input type="button" value="Send Message">
+                <input type="reset" value="Reset">
+                
+
+
+            </form>
+        </div>
+    </section>
+
+<section id="add">
+    <iframe data-aos-duration="2000" data-aos="fade-up" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60529.50857812744!2d73.80612850340086!3d18.52464091110891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfe79aaaaaab%3A0x5b92d1dd212d839a!2sEVEPRO%20event%20management%20company%20in%20Pune!5e0!3m2!1sen!2sin!4v1628666310719!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>    
+
+    <footer>
+        <div class="footer_box container">
+            <div class="row g-0">
+                <div class=" col-md-6 col-12" data-aos-duration="2000" data-aos="fade-right">
+                    <div class="inner">
+                        <img class="logo" src="images/logo.jpg" alt="">
+                        <div class="boxx">
+                         <h3>ddr_Events</h3>
+                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, inventore voluptatibus optio deserunt molestiae amet eaque doloribus laboriosam quod quibusdam vdis!</h6>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class=" col-md-6 col-12" data-aos-duration="2000" data-aos="fade-left">
+                  <div class="row g-0">
+                      <div class="col">
+                        <div class="links">
+                            <h3>Quick Links</h3>
+                            <p><i class="fas fa-arrow-circle-right"></i>Home</p>
+                            <p><i class="fas fa-arrow-circle-right"></i>About</p>
+                            <p><i class="fas fa-arrow-circle-right"></i>Services</p>
+                            <p><i class="fas fa-arrow-circle-right"></i>Gallery</p>
+                            <p><i class="fas fa-arrow-circle-right"></i>Price</p>
+                            <p><i class="fas fa-arrow-circle-right"></i>Review</p>
+                           </div>
+                      </div>
+                      <div class="col">
+                          <h3>let's connect</h3>
+                          <p><i class="fab fa-facebook"></i> Facebook</p>
+                          <p><i class="fab fa-instagram-square"></i> Instagram</p>
+                          <p><i class="fab fa-youtube-square"></i> youtube</p>
+                          <p><i class="fab fa-linkedin"></i> linkdin</p>
+                          <p><i class="fab fa-twitter-square"></i> twitter</p>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <div class="bottom" >
+                <span >All Right &copy; reserved and creted with love by DDR</span>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/other.js"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.your-class').slick({
+                centerMode: true,
+                centerPadding: '60px',
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                slidesToShow: 3,
+                arrows: false,
+                // fade: true,
+                // asNavFor: '.slider-nav',
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            slidesToShow: 1,
+                            centerMode: true,
+                            centerPadding: '40px',
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+</body>
+
+</html>
